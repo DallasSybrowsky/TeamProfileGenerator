@@ -6,6 +6,8 @@
 
 This project is a node.js based command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. The application utilizes the inquirer package and also has tests included in order to ensure that the functionality works as intended.
 
+The video walkthrough showing the functionality of the application may be accessed [here](https://drive.google.com/file/d/17aXB4nL2yTaD_kI9aEtElJrpGvGh64lW/view).
+
 ## Table of Contents
 
 - [Credits](#credits)
