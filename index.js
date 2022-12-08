@@ -121,9 +121,9 @@ const internPrompt = () => {
 
 const employeePrompt = () => {
   return inquirer.prompt(employeeQuery).then((res) => {
-    console.log(res)
+    console.log(res);
     if (res.employeeType === "I am done adding team members.") {
-    console.log(employeeList);
+      console.log(employeeList);
       return employeeList;
     }
     if (res.employeeType === "Engineer") {
@@ -219,8 +219,7 @@ internTemplate = () => {
   return template;
 };
 const pageGenerate = () => {
-  return(
-  `<!DOCTYPE html>
+  return `<!DOCTYPE html>
   <html lang="en">
     <head>
       <meta charset="UTF-8" />
@@ -242,12 +241,14 @@ const pageGenerate = () => {
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </div>
   </body>
-</html>`);
+</html>`;
 };
 // Function to close inquirer and generate HTML
 teamQueries().then(() => {
   const htmlPageData = pageGenerate();
   // console.log(htmlPageData);
-  fs.writeFile('./dist/index.html', htmlPageData, (err) => err ? console.log(err) : console.log('Your org chart has been created!'));
+  fs.writeFile("./dist/index.html", htmlPageData, (err) =>
+    err ? console.log(err) : console.log("Your org chart has been created!")
+  );
 });
 // end point = loop employee array = convert into html

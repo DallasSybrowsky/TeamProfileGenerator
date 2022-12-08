@@ -8,6 +8,10 @@ This project is a node.js based command-line application that takes in informati
 
 The video walkthrough showing the functionality of the application may be accessed [here](https://drive.google.com/file/d/17aXB4nL2yTaD_kI9aEtElJrpGvGh64lW/view).
 
+A screenshot of the generated HTML page from the video is shown below:
+
+<img width="500" src="./TeamScreenshotHTML.png" alt="Team organization page screenshot">
+
 ## Table of Contents
 
 - [Credits](#credits)
